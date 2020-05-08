@@ -34,21 +34,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 930
+    x: 728
     y: 0
-    width: 329
+    width: 474
     height: 741
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 11}
   m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
+  - {fileID: 18}
+  - {fileID: 15}
+  - {fileID: 11}
+  m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -72,10 +74,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 709, y: 492}
+  m_MinSize: {x: 609, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 34
+  controlID: 83
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,15 +93,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1259
+    x: 1202
     y: 0
-    width: 277
+    width: 334
     height: 741
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -112,21 +114,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 470
-    width: 930
+    width: 728
     height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 12}
-  - {fileID: 17}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
@@ -215,12 +216,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 930
+    width: 728
     height: 741
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 35
+  controlID: 84
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,18 +239,517 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 930
+    width: 728
     height: 470
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 11}
+  - {fileID: 17}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 728
+    y: 73.6
+    width: 472
+    height: 720
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 464
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes: e8010000a2000000
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes: 2000000020000000
+    maxSizes: 0000000000000000
+    lastTotalSize: 650
+    splitSize: 6
+    xOffset: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 11}
+    newResultList:
+    - id: 1003
+      uniqueId: '[Build Dependent Input Managers][suite]'
+      name: Build Dependent Input Managers
+      fullName: Build Dependent Input Managers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1ff579d3ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 11}
+    newResultList:
+    - id: 1000
+      uniqueId: '[Build Dependent Input Managers][suite]'
+      name: Build Dependent Input Managers
+      fullName: Build Dependent Input Managers
+      resultStatus: 2
+      duration: 0.4285048
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1005
+      uniqueId: '[D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
+        Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll][suite]'
+      name: EditModeAssembly.dll
+      fullName: D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
+        Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll
+      resultStatus: 2
+      duration: 0.3621763
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1002
+      parentUniqueId: '[Build Dependent Input Managers][suite]'
+    - id: 1006
+      uniqueId: EditModeAssembly.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 2
+      duration: 0.3447982
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: '[D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
+        Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll][suite]'
+    - id: 1007
+      uniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
+      name: EditMode
+      fullName: Tests.EditMode
+      resultStatus: 2
+      duration: 0.3286636
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: EditModeAssembly.dll/[Tests][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+      name: PcInputManagerTests
+      fullName: Tests.EditMode.PcInputManagerTests
+      resultStatus: 2
+      duration: 0.3057997
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
+    - id: 1013
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised]
+      name: CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised
+      resultStatus: 1
+      duration: 0.2102284
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1014
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised]
+      name: CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised
+      resultStatus: 1
+      duration: 0.0020747
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1012
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised]
+      name: CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised
+      resultStatus: 1
+      duration: 0.0007783
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1011
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised]
+      name: CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised
+      resultStatus: 1
+      duration: 0.0008158
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1010
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_Nothing_DragEndIsNotRaised]
+      name: CheckForDragEnd_Nothing_DragEndIsNotRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_Nothing_DragEndIsNotRaised
+      resultStatus: 1
+      duration: 0.0025037
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1007
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButton_DraggingEventIsRaised]
+      name: CheckForDragging_LeftMouseButton_DraggingEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButton_DraggingEventIsRaised
+      resultStatus: 1
+      duration: 0.0008687
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1009
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised]
+      name: CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised
+      resultStatus: 1
+      duration: 0.0006977
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1008
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised]
+      name: CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised
+      resultStatus: 1
+      duration: 0.0008169
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1006
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_Nothing_DraggingEventIsNotRaised]
+      name: CheckForDragging_Nothing_DraggingEventIsNotRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_Nothing_DraggingEventIsNotRaised
+      resultStatus: 1
+      duration: 0.0010886
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1007
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition]
+      name: CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
+      resultStatus: 2
+      duration: 0.02741
+      messages: "  Expected: (1.0, 1.0, 1.0)\r\n  But was:  (0.0, 0.0, 0.0)\r\n"
+      output: 
+      stacktrace: 'at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
+        () [0x0006c] in D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
+        Dependent Input Managers\Assets\Scripts\Tests\EditMode\PcInputManagerTests.cs:91
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised]
+      name: CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
+      resultStatus: 2
+      duration: 0.0021754
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+        Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
+        () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+        Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1004
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised]
+      name: CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
+      resultStatus: 2
+      duration: 0.0020916
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+        Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
+        () [0x00048] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+        Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:46
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1005
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised]
+      name: CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised
+      resultStatus: 1
+      duration: 0.0008645
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1006
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut]
+      name: CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut
+      resultStatus: 1
+      duration: 0.0008322
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    - id: 1002
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_SelectionEventIsNotRaised]
+      name: CheckForSelection_Nothing_SelectionEventIsNotRaised
+      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_SelectionEventIsNotRaised
+      resultStatus: 1
+      duration: 0.0006437
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+    m_ResultText: "CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised (0.002s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat PcInputManager.CheckForSelection
+      () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+      Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
+      () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+      Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0"
+    m_ResultStacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+      Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
+      () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
+      Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 39362815
+      m_LastClickedID: 354956857
+      m_ExpandedIDs: 3754bf8886a889900f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750db68e0d27e4e7d856ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,7 +765,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4391848389275900105, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -275,7 +775,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &12
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,14 +791,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 543.2
-    width: 929
+    width: 727
     height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -314,21 +814,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Curtis\Documents\GitHub\BuildDependentInputManagers\Build
+  m_LastProjectPath: D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
     Dependent Input Managers
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c0380000
-    m_LastClickedID: 14528
-    m_ExpandedIDs: 00000000c0380000
+    m_SelectedIDs: 503b0000
+    m_LastClickedID: 15184
+    m_ExpandedIDs: 00000000c0380000503b00007c3b00008e3b0000463c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,18 +887,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Interfaces
+      m_OriginalName: Interfaces
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 16060
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -412,7 +912,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 221
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,14 +928,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1259.2001
+    x: 1202.4
     y: 73.6
-    width: 276
+    width: 333
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -450,7 +950,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -466,14 +966,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 930.4
+    x: 728
     y: 73.6
-    width: 327
+    width: 472
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -481,7 +981,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_ExpandedIDs: 58d5ffff04d6ffffb4d6ffff5cd7ffff34d8ffffb2dbffff5edcffff06ddffffaeddffff4edefffff0deffff92dfffff2ae0ffffc2e0ffff52e1ffffece1ffff7ce2ffff0ae3ffff90e3ffff18e4ffff9ce4ffff20e5ffff50e5ffffd4e5ffff58e6ffffdee6ffff5ae7ffffdae7ffff56e8ffff7ae8fffff0e8ffff6ee9ffffe8e9ffff5aeaffffcceaffff40ebffffb4ebffff3aecffff0cf2ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -505,7 +1005,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: a8b93409f5001ad4b99e25ec351ca3e2
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -521,14 +1021,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 929
+    width: 727
     height: 449
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -620,7 +1120,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,7 +1136,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -668,10 +1168,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -395
-    m_VBaseRangeMax: 395
+    m_HBaseRangeMin: -612.8
+    m_HBaseRangeMax: 612.8
+    m_VBaseRangeMin: -307.6
+    m_VBaseRangeMax: 307.6
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -688,11 +1188,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 1532
-      height: 790
+      height: 769
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 395}
+    m_Translation: {x: 766, y: 384.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -700,18 +1200,18 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -766
-      y: -395
+      y: -384.5
       width: 1532
-      height: 790
+      height: 769
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_LastWindowPixelSize: {x: 1915, y: 987.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -727,13 +1227,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
+    x: 728
+    y: 73.6
+    width: 472
+    height: 720
   m_ViewDataDictionary: {fileID: 0}
