@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,10 +74,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 609, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 608, y: 471}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 83
+  controlID: 64
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,8 +97,8 @@ MonoBehaviour:
     y: 0
     width: 334
     height: 741
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -218,10 +218,10 @@ MonoBehaviour:
     y: 0
     width: 728
     height: 741
-  m_MinSize: {x: 231, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 231, y: 471}
+  m_MaxSize: {x: 10001, y: 14021}
   vertical: 1
-  controlID: 84
+  controlID: 91
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 728
     height: 470
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -276,7 +276,7 @@ MonoBehaviour:
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 464
+    ID: 132
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: e8010000a2000000
@@ -347,9 +347,9 @@ MonoBehaviour:
       uniqueId: '[Build Dependent Input Managers][suite]'
       name: Build Dependent Input Managers
       fullName: Build Dependent Input Managers
-      resultStatus: 2
-      duration: 0.4285048
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1500612
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -365,9 +365,9 @@ MonoBehaviour:
       name: EditModeAssembly.dll
       fullName: D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
         Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll
-      resultStatus: 2
-      duration: 0.3621763
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0979812
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -381,9 +381,9 @@ MonoBehaviour:
       uniqueId: EditModeAssembly.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.3447982
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0867672
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -398,9 +398,9 @@ MonoBehaviour:
       uniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
       name: EditMode
       fullName: Tests.EditMode
-      resultStatus: 2
-      duration: 0.3286636
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0721487
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -410,13 +410,13 @@ MonoBehaviour:
       categories: []
       parentId: 1006
       parentUniqueId: EditModeAssembly.dll/[Tests][suite]
-    - id: 1003
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-      name: PcInputManagerTests
-      fullName: Tests.EditMode.PcInputManagerTests
-      resultStatus: 2
-      duration: 0.3057997
-      messages: One or more child tests had errors
+    - id: 1001
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+      name: GameEventTests
+      fullName: Tests.EditMode.GameEventTests
+      resultStatus: 1
+      duration: 0.0194547
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -424,150 +424,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
+      parentId: 1010
       parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
-    - id: 1013
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised]
-      name: CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonAndLeftMouseButtonUp_DragEndEventIsRaised
-      resultStatus: 1
-      duration: 0.2102284
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1014
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised]
-      name: CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonAndLeftMouseButtonUp_DragEventIsRaised
-      resultStatus: 1
-      duration: 0.0020747
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1012
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised]
-      name: CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonDownAndLeftMouseButtonUp_DragEndEventIsRaised
-      resultStatus: 1
-      duration: 0.0007783
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1011
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised]
-      name: CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_LeftMouseButtonUp_DragEndEventIsRaised
-      resultStatus: 1
-      duration: 0.0008158
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1010
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragEnd_Nothing_DragEndIsNotRaised]
-      name: CheckForDragEnd_Nothing_DragEndIsNotRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragEnd_Nothing_DragEndIsNotRaised
-      resultStatus: 1
-      duration: 0.0025037
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1007
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButton_DraggingEventIsRaised]
-      name: CheckForDragging_LeftMouseButton_DraggingEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButton_DraggingEventIsRaised
-      resultStatus: 1
-      duration: 0.0008687
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1009
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised]
-      name: CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonAndLeftMouseButtonUp_DraggingEventIsNotRaised
-      resultStatus: 1
-      duration: 0.0006977
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1008
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised]
-      name: CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_LeftMouseButtonDownAndLeftMouseButton_DraggingEventIsRaised
-      resultStatus: 1
-      duration: 0.0008169
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
     - id: 1006
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForDragging_Nothing_DraggingEventIsNotRaised]
-      name: CheckForDragging_Nothing_DraggingEventIsNotRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForDragging_Nothing_DraggingEventIsNotRaised
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListeners_ListenerMethodsAreCalled]
+      name: Raise_MultipleListeners_ListenerMethodsAreCalled
+      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListeners_ListenerMethodsAreCalled
       resultStatus: 1
-      duration: 0.0010886
+      duration: 0.0012394
       messages: 
       output: 
       stacktrace: 
@@ -578,18 +442,69 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1007
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition]
-      name: CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
-      resultStatus: 2
-      duration: 0.02741
-      messages: "  Expected: (1.0, 1.0, 1.0)\r\n  But was:  (0.0, 0.0, 0.0)\r\n"
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1010
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled]
+      name: Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled
+      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled
+      resultStatus: 1
+      duration: 0.0005057
+      messages: 
       output: 
-      stacktrace: 'at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_InteractionPositionValueIsSetToMousePosition
-        () [0x0006c] in D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
-        Dependent Input Managers\Assets\Scripts\Tests\EditMode\PcInputManagerTests.cs:91
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1008
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly]
+      name: Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly
+      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly
+      resultStatus: 1
+      duration: 0.0004478
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1007
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly]
+      name: Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly
+      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly
+      resultStatus: 1
+      duration: 0.0005302
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1002
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_NoListeners_NoError]
+      name: Raise_NoListeners_NoError
+      fullName: Tests.EditMode.GameEventTests.Raise_NoListeners_NoError
+      resultStatus: 1
+      duration: 0.0009786
+      messages: 
+      output: 
+      stacktrace: 'at Tests.EditMode.GameEventTests.Raise_NoListeners_NoError ()
+        [0x00028] in D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
+        Dependent Input Managers\Assets\Scripts\Tests\EditMode\GameEventTests.cs:29
 
 '
       notRunnable: 0
@@ -599,24 +514,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
     - id: 1003
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised]
-      name: CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
-      resultStatus: 2
-      duration: 0.0021754
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListener_ListenerMethodIsCalled]
+      name: Raise_OneListener_ListenerMethodIsCalled
+      fullName: Tests.EditMode.GameEventTests.Raise_OneListener_ListenerMethodIsCalled
+      resultStatus: 1
+      duration: 0.0004009
+      messages: 
       output: 
-      stacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-        Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
-        () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-        Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -624,24 +531,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1004
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised]
-      name: CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
-      resultStatus: 2
-      duration: 0.0020916
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1009
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerUnregistered_ListenerMethodNotCalled]
+      name: Raise_OneListenerUnregistered_ListenerMethodNotCalled
+      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerUnregistered_ListenerMethodNotCalled
+      resultStatus: 1
+      duration: 0.0003799
+      messages: 
       output: 
-      stacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-        Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButton_SelectionEventIsRaised
-        () [0x00048] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-        Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:46
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -649,13 +548,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
     - id: 1005
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised]
-      name: CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDownAndLeftMouseButtonUp_SelectionEventIsNotRaised
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly]
+      name: Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly
+      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly
       resultStatus: 1
-      duration: 0.0008645
+      duration: 0.0003119
       messages: 
       output: 
       stacktrace: 
@@ -666,13 +565,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    - id: 1006
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut]
-      name: CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_InteractionPositionValueIsZeroedOut
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1004
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly]
+      name: Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly
+      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly
       resultStatus: 1
-      duration: 0.0008322
+      duration: 0.0003239
       messages: 
       output: 
       stacktrace: 
@@ -683,13 +582,80 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+    - id: 1001
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+      name: PcInteractionMapperTests
+      fullName: Tests.EditMode.PcInteractionMapperTests
+      resultStatus: 1
+      duration: 0.0353049
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClicked_MousePositionReturned]
+      name: CheckSelection_PrimaryMouseClicked_MousePositionReturned
+      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClicked_MousePositionReturned
+      resultStatus: 1
+      duration: 0.0007105
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+    - id: 1004
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned]
+      name: CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned
+      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned
+      resultStatus: 1
+      duration: 0.0006431
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+    - id: 1005
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned]
+      name: CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned
+      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned
+      resultStatus: 1
+      duration: 0.0005291
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
     - id: 1002
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInputManagerTests/[EditModeAssembly][Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_SelectionEventIsNotRaised]
-      name: CheckForSelection_Nothing_SelectionEventIsNotRaised
-      fullName: Tests.EditMode.PcInputManagerTests.CheckForSelection_Nothing_SelectionEventIsNotRaised
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelection]
+      name: CheckSelection_PrimaryMouseNotClicked_NoSelection
+      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelection
       resultStatus: 1
-      duration: 0.0006437
+      duration: 0.0008006
       messages: 
       output: 
       stacktrace: 
@@ -700,30 +666,14 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInputManagerTests][suite]
-    m_ResultText: "CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised (0.002s)\n---\nSystem.NullReferenceException
-      : Object reference not set to an instance of an object\n---\nat PcInputManager.CheckForSelection
-      () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-      Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
-      () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-      Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0"
-    m_ResultStacktrace: "  at PcInputManager.CheckForSelection () [0x00024] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-      Dependent Input Managers\\Assets\\Scripts\\PcInputManager.cs:7 \r\n  at Tests.EditMode.PcInputManagerTests.CheckForSelection_LeftMouseButtonDown_SelectionEventIsRaised
-      () [0x00035] in D:\\Curtis\\Documents\\GitHub\\Unity3DBuildDependentInputManagers\\Build
-      Dependent Input Managers\\Assets\\Scripts\\Tests\\EditMode\\PcInputManagerTests.cs:32
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+    m_ResultText: Raise_OneListenerAddedAndRemoved_ListenerMethodNotCalled (0.001s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 39362815
-      m_LastClickedID: 354956857
-      m_ExpandedIDs: 3754bf8886a889900f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750db68e0d27e4e7d856ffffff7f
+      m_SelectedIDs: fe55b88e
+      m_LastClickedID: -1900521986
+      m_ExpandedIDs: 3754bf8886a889900f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750d20146c1eb68e0d27906b9130e4e7d856bf8f1e7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -826,9 +776,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 503b0000
-    m_LastClickedID: 15184
-    m_ExpandedIDs: 00000000c0380000503b00007c3b00008e3b0000463c0000
+    m_SelectedIDs: dc380000
+    m_LastClickedID: 14556
+    m_ExpandedIDs: 00000000da380000dc380000de380000ea380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -856,7 +806,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0380000
+    m_ExpandedIDs: 00000000da380000dc380000de380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -887,18 +837,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Interfaces
-      m_OriginalName: Interfaces
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16060
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -979,9 +929,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 203e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 58d5ffff04d6ffffb4d6ffff5cd7ffff34d8ffffb2dbffff5edcffff06ddffffaeddffff4edefffff0deffff92dfffff2ae0ffffc2e0ffff52e1ffffece1ffff7ce2ffff0ae3ffff90e3ffff18e4ffff9ce4ffff20e5ffff50e5ffffd4e5ffff58e6ffffdee6ffff5ae7ffffdae7ffff56e8ffff7ae8fffff0e8ffff6ee9ffffe8e9ffff5aeaffffcceaffff40ebffffb4ebffff3aecffff0cf2ffff6afbffff
+      m_ExpandedIDs: bcdaffff2edbffffe2dbffff96dcffff12ddffffc0ddffffc2deffff70dfffff12e0ffff38e0ffffd4e0ffffcce1ffff62e2ffff48e3ffff16e4ffff58e4ffff7ee6ffff0ae7ffffeee7ffff80e8ffff10e9ffffd8e9ffff4aeaffffd0eaffff62ecffff92ecffffb6ecffff2cedffff56edffff7aedfffff0edffff66eeffff9aeeffff26efffff0af0ffff96f2ffff1af3ffff8ef3fffffcf3ffff6af4ffff94f4ffff74f5fffffaf5ffff70f6ffffe8f6ffff60f7ffffd8f7ffff4cf8ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

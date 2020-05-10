@@ -44,3 +44,5 @@ References
 * [Unit Testing Player Input in Unity aka "Humble Object Wrapping the Unity Framework" - Video](https://www.youtube.com/watch?v=MGx5mb5b3sY&list=LLBSPX1RMEN2A6io0IGVlcuw)
 
 * [Importing NSubstitute - Forum Post](https://answers.unity.com/questions/1582128/unity20183-nsubstitute-how-to-import.html)
+
+* [Understanding Method Injection - Blog](https://freecontent.manning.com/understanding-method-injection/)
