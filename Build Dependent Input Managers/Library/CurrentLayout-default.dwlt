@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -39,20 +39,46 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 728
+    x: 784
     y: 0
-    width: 474
+    width: 432
     height: 741
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 11}
+  m_ActualView: {fileID: 10}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 15}
-  - {fileID: 11}
-  m_Selected: 2
+  - {fileID: 12}
+  - {fileID: 10}
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 513
+    y: 0
+    width: 271
+    height: 741
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 14}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,19 +92,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 9}
+  - {fileID: 3}
   - {fileID: 2}
-  - {fileID: 4}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 608, y: 471}
-  m_MaxSize: {x: 18003, y: 14021}
+  m_MinSize: {x: 781, y: 221}
+  m_MaxSize: {x: 16006, y: 4021}
   vertical: 0
-  controlID: 64
---- !u!114 &4
+  controlID: 219
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,38 +120,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1202
+    x: 1216
     y: 0
-    width: 334
+    width: 320
     height: 741
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 470
-    width: 728
-    height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 7}
-  - {fileID: 3}
+  - {fileID: 4}
   - {fileID: 8}
   m_Position:
     serializedVersion: 2
@@ -206,51 +207,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 728
-    height: 741
-  m_MinSize: {x: 231, y: 471}
-  m_MaxSize: {x: 10001, y: 14021}
-  vertical: 1
-  controlID: 91
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 728
-    height: 470
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+    width: 513
+    height: 741
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 17}
-  - {fileID: 12}
+  - {fileID: 11}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &11
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,13 +246,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 728
+    x: 784
     y: 73.6
-    width: 472
+    width: 430
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 132
+    ID: 2699
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: e8010000a2000000
@@ -290,7 +266,7 @@ MonoBehaviour:
     xOffset: 0
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 11}
+    m_Window: {fileID: 10}
     newResultList:
     - id: 1003
       uniqueId: '[Build Dependent Input Managers][suite]'
@@ -341,14 +317,14 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 11}
+    m_Window: {fileID: 10}
     newResultList:
     - id: 1000
       uniqueId: '[Build Dependent Input Managers][suite]'
       name: Build Dependent Input Managers
       fullName: Build Dependent Input Managers
       resultStatus: 1
-      duration: 0.1500612
+      duration: 0.5524723
       messages: 
       output: 
       stacktrace: 
@@ -366,7 +342,7 @@ MonoBehaviour:
       fullName: D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
         Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll
       resultStatus: 1
-      duration: 0.0979812
+      duration: 0.4688085
       messages: 
       output: 
       stacktrace: 
@@ -382,7 +358,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0867672
+      duration: 0.4539126
       messages: 
       output: 
       stacktrace: 
@@ -399,7 +375,7 @@ MonoBehaviour:
       name: EditMode
       fullName: Tests.EditMode
       resultStatus: 1
-      duration: 0.0721487
+      duration: 0.4273929
       messages: 
       output: 
       stacktrace: 
@@ -411,11 +387,11 @@ MonoBehaviour:
       parentId: 1006
       parentUniqueId: EditModeAssembly.dll/[Tests][suite]
     - id: 1001
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-      name: GameEventTests
-      fullName: Tests.EditMode.GameEventTests
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+      name: AndroidInteractionMapperTests
+      fullName: Tests.EditMode.AndroidInteractionMapperTests
       resultStatus: 1
-      duration: 0.0194547
+      duration: 0.3344578
       messages: 
       output: 
       stacktrace: 
@@ -424,65 +400,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
+      parentId: 1014
       parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
-    - id: 1006
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListeners_ListenerMethodsAreCalled]
-      name: Raise_MultipleListeners_ListenerMethodsAreCalled
-      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListeners_ListenerMethodsAreCalled
-      resultStatus: 1
-      duration: 0.0012394
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1010
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled]
-      name: Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled
-      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersUnregistered_ListenerMethodsNotCalled
-      resultStatus: 1
-      duration: 0.0005057
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1008
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly]
-      name: Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly
-      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersWithMultipleParametersInResponse_ListenerMethodsAreCalledCorrectly
-      resultStatus: 1
-      duration: 0.0004478
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
     - id: 1007
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly]
-      name: Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly
-      fullName: Tests.EditMode.GameEventTests.Raise_MultipleListenersWithOneParameterInResponse_ListenerMethodsAreCalledCorrectly
-      resultStatus: 1
-      duration: 0.0005302
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned]
+      name: CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -493,34 +418,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1002
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_NoListeners_NoError]
-      name: Raise_NoListeners_NoError
-      fullName: Tests.EditMode.GameEventTests.Raise_NoListeners_NoError
-      resultStatus: 1
-      duration: 0.0009786
-      messages: 
-      output: 
-      stacktrace: 'at Tests.EditMode.GameEventTests.Raise_NoListeners_NoError ()
-        [0x00028] in D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
-        Dependent Input Managers\Assets\Scripts\Tests\EditMode\GameEventTests.cs:29
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1003
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListener_ListenerMethodIsCalled]
-      name: Raise_OneListener_ListenerMethodIsCalled
-      fullName: Tests.EditMode.GameEventTests.Raise_OneListener_ListenerMethodIsCalled
-      resultStatus: 1
-      duration: 0.0004009
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1006
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned]
+      name: CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -531,13 +435,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1009
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerUnregistered_ListenerMethodNotCalled]
-      name: Raise_OneListenerUnregistered_ListenerMethodNotCalled
-      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerUnregistered_ListenerMethodNotCalled
-      resultStatus: 1
-      duration: 0.0003799
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1008
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -548,13 +452,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
     - id: 1005
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly]
-      name: Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly
-      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerWithMultipleParametersInResponse_ListenerMethodIsCalledCorrectly
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned]
+      name: CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned
       resultStatus: 1
-      duration: 0.0003119
+      duration: 0.0011333
       messages: 
       output: 
       stacktrace: 
@@ -565,13 +469,47 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_NoTouches_NoSelectionOccurredAndNoTouchPositionReturned]
+      name: CheckSelection_NoTouches_NoSelectionOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_NoTouches_NoSelectionOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0006499
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1002
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned]
+      name: CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0010243
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
     - id: 1004
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/GameEventTests/[EditModeAssembly][Tests.EditMode.GameEventTests.Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly]
-      name: Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly
-      fullName: Tests.EditMode.GameEventTests.Raise_OneListenerWithOneParameterInResponse_ListenerMethodIsCalledCorrectly
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchNotBegan_NoSelectionOccurredAndNoTouchPositionReturned]
+      name: CheckSelection_OneTouchNotBegan_NoSelectionOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchNotBegan_NoSelectionOccurredAndNoTouchPositionReturned
       resultStatus: 1
-      duration: 0.0003239
+      duration: 0.0008309
       messages: 
       output: 
       stacktrace: 
@@ -582,13 +520,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.GameEventTests][suite]
-    - id: 1001
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
-      name: PcInteractionMapperTests
-      fullName: Tests.EditMode.PcInteractionMapperTests
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
+      name: WindowsInteractionMapperTests
+      fullName: Tests.EditMode.WindowsInteractionMapperTests
       resultStatus: 1
-      duration: 0.0353049
+      duration: 0.0677249
       messages: 
       output: 
       stacktrace: 
@@ -597,14 +535,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
+      parentId: 1007
       parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
-    - id: 1003
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClicked_MousePositionReturned]
-      name: CheckSelection_PrimaryMouseClicked_MousePositionReturned
-      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClicked_MousePositionReturned
+    - id: 1008
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseNotReleased_NoDragEndAndNoMousePositionReturned]
+      name: CheckDragEnd_PrimaryMouseNotReleased_NoDragEndAndNoMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseNotReleased_NoDragEndAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.0007105
+      duration: 0.0057369
       messages: 
       output: 
       stacktrace: 
@@ -615,13 +553,30 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
+    - id: 1007
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseReleased_DragEndOccurredAndMousePositionReturned]
+      name: CheckDragEnd_PrimaryMouseReleased_DragEndOccurredAndMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseReleased_DragEndOccurredAndMousePositionReturned
+      resultStatus: 1
+      duration: 0.0010783
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
     - id: 1004
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned]
-      name: CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned
-      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndHeldDown_MousePositionReturned
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDown_DraggingOccurredAndMousePositionReturned]
+      name: CheckDragging_PrimaryMouseHeldDown_DraggingOccurredAndMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDown_DraggingOccurredAndMousePositionReturned
       resultStatus: 1
-      duration: 0.0006431
+      duration: 0.0013131
       messages: 
       output: 
       stacktrace: 
@@ -632,13 +587,30 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
+    - id: 1006
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDownAndReleased_NoDraggingOccurredAndNoMousePositionReturned]
+      name: CheckDragging_PrimaryMouseHeldDownAndReleased_NoDraggingOccurredAndNoMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDownAndReleased_NoDraggingOccurredAndNoMousePositionReturned
+      resultStatus: 1
+      duration: 0.001137
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
     - id: 1005
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned]
-      name: CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned
-      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseClickedAndReleased_MousePositionReturned
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseNotHeldDown_NoDraggingOccurredAndNoMousePositionReturned]
+      name: CheckDragging_PrimaryMouseNotHeldDown_NoDraggingOccurredAndNoMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseNotHeldDown_NoDraggingOccurredAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.0005291
+      duration: 0.0008937
       messages: 
       output: 
       stacktrace: 
@@ -649,13 +621,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
     - id: 1002
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/PcInteractionMapperTests/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelection]
-      name: CheckSelection_PrimaryMouseNotClicked_NoSelection
-      fullName: Tests.EditMode.PcInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelection
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseClicked_SelectionOccurredAndMousePositionReturned]
+      name: CheckSelection_PrimaryMouseClicked_SelectionOccurredAndMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseClicked_SelectionOccurredAndMousePositionReturned
       resultStatus: 1
-      duration: 0.0008006
+      duration: 0.0012637
       messages: 
       output: 
       stacktrace: 
@@ -666,14 +638,31 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.PcInteractionMapperTests][suite]
-    m_ResultText: Raise_OneListenerAddedAndRemoved_ListenerMethodNotCalled (0.001s)
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
+    - id: 1003
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/WindowsInteractionMapperTests/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelectionOccurredAndNoMousePositionReturned]
+      name: CheckSelection_PrimaryMouseNotClicked_NoSelectionOccurredAndNoMousePositionReturned
+      fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelectionOccurredAndNoMousePositionReturned
+      resultStatus: 1
+      duration: 0.0012727
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
+    m_ResultText: CheckDragging_OneTouchBeganSelectionThenStationary_ (0.269s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fe55b88e
-      m_LastClickedID: -1900521986
-      m_ExpandedIDs: 3754bf8886a889900f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750d20146c1eb68e0d27906b9130e4e7d856bf8f1e7effffff7f
+      m_SelectedIDs: f2e2f0ee
+      m_LastClickedID: -286203150
+      m_ExpandedIDs: 3754bf8886a8899092c6549a6cb8bbaf0f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750d20146c1eb68e0d27906b9130e4e7d856bf8f1e7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -699,7 +688,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &12
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -725,7 +714,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -746,10 +735,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 543.2
-    width: 727
-    height: 250
+    x: 784
+    y: 73.6
+    width: 430
+    height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -764,11 +753,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
-  m_ViewMode: 1
+    - Assets/Scripts/Tests/EditMode
+  m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Events
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Curtis\Documents\GitHub\Unity3DBuildDependentInputManagers\Build
     Dependent Input Managers
@@ -776,9 +765,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc380000
-    m_LastClickedID: 14556
-    m_ExpandedIDs: 00000000da380000dc380000de380000ea380000
+    m_SelectedIDs: 8c3b0000
+    m_LastClickedID: 15244
+    m_ExpandedIDs: 00000000de380000e0380000e2380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -804,37 +793,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da380000dc380000de380000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_SelectedIDs: 84540000
+    m_LastClickedID: 21636
+    m_ExpandedIDs: ffffffff00000000de380000e0380000e2380000ee380000f03800005c43000064430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -851,6 +812,34 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 84540000
+    m_LastClickedInstanceID: 21636
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -861,8 +850,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 221
---- !u!114 &14
+  m_DirectoriesAreaWidth: 110
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -883,9 +872,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1202.4
+    x: 1216
     y: 73.6
-    width: 333
+    width: 319
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -900,7 +889,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -921,17 +910,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 728
+    x: 512.8
     y: 73.6
-    width: 472
+    width: 269
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 203e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bcdaffff2edbffffe2dbffff96dcffff12ddffffc0ddffffc2deffff70dfffff12e0ffff38e0ffffd4e0ffffcce1ffff62e2ffff48e3ffff16e4ffff58e4ffff7ee6ffff0ae7ffffeee7ffff80e8ffff10e9ffffd8e9ffff4aeaffffd0eaffff62ecffff92ecffffb6ecffff2cedffff56edffff7aedfffff0edffff66eeffff9aeeffff26efffff0af0ffff96f2ffff1af3ffff8ef3fffffcf3ffff6af4ffff94f4ffff74f5fffffaf5ffff70f6ffffe8f6ffff60f7ffffd8f7ffff4cf8ffff6afbffff
+      m_ExpandedIDs: 048effffac8effff548ffffffc8fffffa290ffff4691ffffea91ffff8692ffff2c93ffffc893ffff6494ffffe294ffff7495ffff0e96ffffa696ffff2297ffffbc97ffffc099ffff549affffea9affff7a9bffff0a9cffff9c9cffff2e9dffffc29dffff569effffe89effff749fffff02a0ffff98a0ffff20a1ffffa4a1ffff28a2ffffb4a2ffff3ea3ffffc0a3ffff40a4ffffc8a4ffff48a5ffffcea5ffff52a6ffffd0a6ffff20a8ffff32a8ffffe0a8ffff62a9ffff74a9ffff24aaffffe0c6ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -947,7 +936,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 3}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -955,7 +944,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: a8b93409f5001ad4b99e25ec351ca3e2
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -978,8 +967,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 727
-    height: 449
+    width: 512
+    height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 07a1d0191fa445e4abe94ab48631ca1e
@@ -991,9 +980,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -7.5363493, y: -1.8299041, z: -3.171875}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -7.5363493, y: -1.8299041, z: -3.171875}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 31
@@ -1043,9 +1032,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 39.065987
     speed: 2
-    m_Value: 10
+    m_Value: 39.065987
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1070,7 +1059,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1091,10 +1080,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 0
+    y: 73.6
+    width: 411
+    height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1104,10 +1093,10 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 640, y: 480}
+  m_TargetSize: {x: 513.75, y: 873.75}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_MaximizeOnPlay: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -1118,10 +1107,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -612.8
-    m_HBaseRangeMax: 612.8
-    m_VBaseRangeMin: -307.6
-    m_VBaseRangeMax: 307.6
+    m_HBaseRangeMin: -164.40001
+    m_HBaseRangeMax: 164.40001
+    m_VBaseRangeMin: -279.6
+    m_VBaseRangeMax: 279.6
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1130,7 +1119,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1139,29 +1128,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
+      width: 411
+      height: 699
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 384.5}
+    m_Translation: {x: 205.5, y: 349.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -384.5
-      width: 1532
-      height: 769
+      x: -205.5
+      y: -349.5
+      width: 411
+      height: 699
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1915, y: 987.5}
+  m_LastWindowPixelSize: {x: 513.75, y: 900}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1182,8 +1171,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 728
+    x: 512.8
     y: 73.6
-    width: 472
+    width: 270
     height: 720
   m_ViewDataDictionary: {fileID: 0}
