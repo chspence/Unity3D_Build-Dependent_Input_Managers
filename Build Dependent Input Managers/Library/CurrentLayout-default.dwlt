@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -43,14 +43,14 @@ MonoBehaviour:
     y: 0
     width: 432
     height: 741
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 10}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 10}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -66,12 +66,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 513
+    x: 425
     y: 0
-    width: 271
+    width: 359
     height: 741
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 17}
@@ -101,10 +101,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 781, y: 221}
-  m_MaxSize: {x: 16006, y: 4021}
+  m_MinSize: {x: 909, y: 271}
+  m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 219
+  controlID: 89
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,7 +215,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 513
+    width: 425
     height: 741
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -246,13 +246,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 784
+    x: 624.8
     y: 73.6
-    width: 430
+    width: 589
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 2699
+    ID: 107
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: e8010000a2000000
@@ -324,7 +324,7 @@ MonoBehaviour:
       name: Build Dependent Input Managers
       fullName: Build Dependent Input Managers
       resultStatus: 1
-      duration: 0.5524723
+      duration: 0.5253475
       messages: 
       output: 
       stacktrace: 
@@ -342,7 +342,7 @@ MonoBehaviour:
       fullName: D:/Curtis/Documents/GitHub/Unity3DBuildDependentInputManagers/Build
         Dependent Input Managers/Library/ScriptAssemblies/EditModeAssembly.dll
       resultStatus: 1
-      duration: 0.4688085
+      duration: 0.4321559
       messages: 
       output: 
       stacktrace: 
@@ -358,7 +358,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.4539126
+      duration: 0.40313
       messages: 
       output: 
       stacktrace: 
@@ -375,7 +375,7 @@ MonoBehaviour:
       name: EditMode
       fullName: Tests.EditMode
       resultStatus: 1
-      duration: 0.4273929
+      duration: 0.3753876
       messages: 
       output: 
       stacktrace: 
@@ -391,7 +391,7 @@ MonoBehaviour:
       name: AndroidInteractionMapperTests
       fullName: Tests.EditMode.AndroidInteractionMapperTests
       resultStatus: 1
-      duration: 0.3344578
+      duration: 0.2909286
       messages: 
       output: 
       stacktrace: 
@@ -402,12 +402,182 @@ MonoBehaviour:
       categories: []
       parentId: 1014
       parentUniqueId: EditModeAssembly.dll/Tests/[Tests.EditMode][suite]
+    - id: 1025
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_MultipleTouchesAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned]
+      name: CheckDragEnd_MultipleTouchesAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_MultipleTouchesAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.2125522
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1022
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_NoTouches_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_NoTouches_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_NoTouches_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.00204
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1017
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchBegan_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_OneTouchBegan_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchBegan_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0006206
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1021
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchCanceled_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_OneTouchCanceled_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchCanceled_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005449
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1024
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchCanceledAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned]
+      name: CheckDragEnd_OneTouchCanceledAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchCanceledAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0007803
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1020
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchEnded_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_OneTouchEnded_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchEnded_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005512
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1017
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchEndedAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned]
+      name: CheckDragEnd_OneTouchEndedAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchEndedAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.001371
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1018
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchMoved_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_OneTouchMoved_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchMoved_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0006223
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1019
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchStationary_NoDragEndOccurredAndNoTouchPositionReturned]
+      name: CheckDragEnd_OneTouchStationary_NoDragEndOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragEnd_OneTouchStationary_NoDragEndOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0006081
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1009
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_MultipleTouches_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_MultipleTouches_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_MultipleTouches_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005583
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
     - id: 1007
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned]
-      name: CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned
-      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned
-      resultStatus: 0
-      duration: 0
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_NoTouches_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_NoTouches_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_NoTouches_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0004918
       messages: 
       output: 
       stacktrace: 
@@ -420,11 +590,11 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
     - id: 1006
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned]
-      name: CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned
-      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned
-      resultStatus: 0
-      duration: 0
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchBegan_DraggingOccurredAndTouchPositionReturned]
+      name: CheckDragging_OneTouchBegan_DraggingOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchBegan_DraggingOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.000632
       messages: 
       output: 
       stacktrace: 
@@ -436,12 +606,131 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
-    - id: 1008
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned]
-      name: CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned
-      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned
-      resultStatus: 0
-      duration: 0
+    - id: 1012
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCanceled_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchCanceled_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchCanceled_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005585
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1011
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchEnded_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchEnded_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchEnded_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005417
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1009
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMoved_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchMoved_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMoved_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005059
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1014
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMovedAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned]
+      name: CheckDragging_OneTouchMovedAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMovedAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0013511
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1015
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMovedAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchMovedAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchMovedAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0008227
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1010
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationary_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchStationary_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationary_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0005883
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1013
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationaryAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned]
+      name: CheckDragging_OneTouchStationaryAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationaryAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned
+      resultStatus: 1
+      duration: 0.0007283
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
+    - id: 1016
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationaryAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned]
+      name: CheckDragging_OneTouchStationaryAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckDragging_OneTouchStationaryAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned
+      resultStatus: 1
+      duration: 0.000841
       messages: 
       output: 
       stacktrace: 
@@ -454,11 +743,11 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests][suite]
     - id: 1005
-      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned]
-      name: CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned
-      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned
+      uniqueId: EditModeAssembly.dll/Tests/EditMode/AndroidInteractionMapperTests/[EditModeAssembly][Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouches_NoSelectionOccurredAndNoTouchPositionReturned]
+      name: CheckSelection_MultipleTouches_NoSelectionOccurredAndNoTouchPositionReturned
+      fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_MultipleTouches_NoSelectionOccurredAndNoTouchPositionReturned
       resultStatus: 1
-      duration: 0.0011333
+      duration: 0.0007236
       messages: 
       output: 
       stacktrace: 
@@ -475,7 +764,7 @@ MonoBehaviour:
       name: CheckSelection_NoTouches_NoSelectionOccurredAndNoTouchPositionReturned
       fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_NoTouches_NoSelectionOccurredAndNoTouchPositionReturned
       resultStatus: 1
-      duration: 0.0006499
+      duration: 0.0004435
       messages: 
       output: 
       stacktrace: 
@@ -492,7 +781,7 @@ MonoBehaviour:
       name: CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned
       fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned
       resultStatus: 1
-      duration: 0.0010243
+      duration: 0.0006418
       messages: 
       output: 
       stacktrace: 
@@ -509,7 +798,7 @@ MonoBehaviour:
       name: CheckSelection_OneTouchNotBegan_NoSelectionOccurredAndNoTouchPositionReturned
       fullName: Tests.EditMode.AndroidInteractionMapperTests.CheckSelection_OneTouchNotBegan_NoSelectionOccurredAndNoTouchPositionReturned
       resultStatus: 1
-      duration: 0.0008309
+      duration: 0.0005567
       messages: 
       output: 
       stacktrace: 
@@ -526,7 +815,7 @@ MonoBehaviour:
       name: WindowsInteractionMapperTests
       fullName: Tests.EditMode.WindowsInteractionMapperTests
       resultStatus: 1
-      duration: 0.0677249
+      duration: 0.0491445
       messages: 
       output: 
       stacktrace: 
@@ -542,7 +831,7 @@ MonoBehaviour:
       name: CheckDragEnd_PrimaryMouseNotReleased_NoDragEndAndNoMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseNotReleased_NoDragEndAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.0057369
+      duration: 0.0047552
       messages: 
       output: 
       stacktrace: 
@@ -559,7 +848,7 @@ MonoBehaviour:
       name: CheckDragEnd_PrimaryMouseReleased_DragEndOccurredAndMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragEnd_PrimaryMouseReleased_DragEndOccurredAndMousePositionReturned
       resultStatus: 1
-      duration: 0.0010783
+      duration: 0.0016324
       messages: 
       output: 
       stacktrace: 
@@ -576,7 +865,7 @@ MonoBehaviour:
       name: CheckDragging_PrimaryMouseHeldDown_DraggingOccurredAndMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDown_DraggingOccurredAndMousePositionReturned
       resultStatus: 1
-      duration: 0.0013131
+      duration: 0.0018603
       messages: 
       output: 
       stacktrace: 
@@ -593,7 +882,7 @@ MonoBehaviour:
       name: CheckDragging_PrimaryMouseHeldDownAndReleased_NoDraggingOccurredAndNoMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseHeldDownAndReleased_NoDraggingOccurredAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.001137
+      duration: 0.0010493
       messages: 
       output: 
       stacktrace: 
@@ -610,7 +899,7 @@ MonoBehaviour:
       name: CheckDragging_PrimaryMouseNotHeldDown_NoDraggingOccurredAndNoMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckDragging_PrimaryMouseNotHeldDown_NoDraggingOccurredAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.0008937
+      duration: 0.0006901
       messages: 
       output: 
       stacktrace: 
@@ -627,7 +916,7 @@ MonoBehaviour:
       name: CheckSelection_PrimaryMouseClicked_SelectionOccurredAndMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseClicked_SelectionOccurredAndMousePositionReturned
       resultStatus: 1
-      duration: 0.0012637
+      duration: 0.0010896
       messages: 
       output: 
       stacktrace: 
@@ -644,7 +933,7 @@ MonoBehaviour:
       name: CheckSelection_PrimaryMouseNotClicked_NoSelectionOccurredAndNoMousePositionReturned
       fullName: Tests.EditMode.WindowsInteractionMapperTests.CheckSelection_PrimaryMouseNotClicked_NoSelectionOccurredAndNoMousePositionReturned
       resultStatus: 1
-      duration: 0.0012727
+      duration: 0.000721
       messages: 
       output: 
       stacktrace: 
@@ -656,13 +945,14 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: EditModeAssembly.dll/Tests/EditMode/[EditModeAssembly][Tests.EditMode.WindowsInteractionMapperTests][suite]
-    m_ResultText: CheckDragging_OneTouchBeganSelectionThenStationary_ (0.269s)
+    m_ResultText: CheckDragEnd_MultipleTouchesAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned
+      (0.213s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f2e2f0ee
-      m_LastClickedID: -286203150
-      m_ExpandedIDs: 3754bf8886a8899092c6549a6cb8bbaf0f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750d20146c1eb68e0d27906b9130e4e7d856bf8f1e7effffff7f
+      m_SelectedIDs: db9659a2
+      m_LastClickedID: -1571186981
+      m_ExpandedIDs: 3754bf8886a889900f4b9cb984ec67c21ff579d363be05ef074c5dfcc0bd750d20146c1eb68e0d27906b9130e4e7d856bf8f1e7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -767,7 +1057,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8c3b0000
     m_LastClickedID: 15244
-    m_ExpandedIDs: 00000000de380000e0380000e2380000
+    m_ExpandedIDs: 000000000a3900000c3900000e39000010390000123900001439000016390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -793,9 +1083,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84540000
-    m_LastClickedID: 21636
-    m_ExpandedIDs: ffffffff00000000de380000e0380000e2380000ee380000f03800005c43000064430000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff000000000a3900000c3900000e3900001039000012390000143900008c39000092390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -811,7 +1101,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 2}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -820,8 +1110,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 84540000
-    m_LastClickedInstanceID: 21636
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -910,17 +1200,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 512.8
+    x: 424.80002
     y: 73.6
-    width: 269
+    width: 357
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 622c0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 048effffac8effff548ffffffc8fffffa290ffff4691ffffea91ffff8692ffff2c93ffffc893ffff6494ffffe294ffff7495ffff0e96ffffa696ffff2297ffffbc97ffffc099ffff549affffea9affff7a9bffff0a9cffff9c9cffff2e9dffffc29dffff569effffe89effff749fffff02a0ffff98a0ffff20a1ffffa4a1ffff28a2ffffb4a2ffff3ea3ffffc0a3ffff40a4ffffc8a4ffff48a5ffffcea5ffff52a6ffffd0a6ffff20a8ffff32a8ffffe0a8ffff62a9ffff74a9ffff24aaffffe0c6ffff6afbffff
+      m_ExpandedIDs: c0daffff52dbffff46dcffff8cddffff80deffff74dfffff64e0ffff5ae1ffffa2e2ffff8ce3ffff7ce4ffff50e5ffffc0e6ffff92e7ffff64e8ffff28e9fffff0e9ffffbaeaffff7eebffff42ecffff06edffffc6edffff80eeffff38effffff2efffffaaf0ffff62f1ffff1af2ffffcef2ffff84f3ffff46f4fffffaf4ffff76f5ffffd8f5ffff84f6ffff34f7ffffeaf7ffff92f8ffff10f9ffff64f9ffff12faffff96faffffeafaffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -967,7 +1257,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 512
+    width: 424
     height: 720
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -1107,10 +1397,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -164.40001
-    m_HBaseRangeMax: 164.40001
-    m_VBaseRangeMin: -279.6
-    m_VBaseRangeMax: 279.6
+    m_HBaseRangeMin: -205.5
+    m_HBaseRangeMax: 205.5
+    m_VBaseRangeMin: -349.5
+    m_VBaseRangeMax: 349.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1

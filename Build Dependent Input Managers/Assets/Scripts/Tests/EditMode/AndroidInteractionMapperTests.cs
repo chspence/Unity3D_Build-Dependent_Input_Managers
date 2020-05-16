@@ -2,7 +2,6 @@
 using NSubstitute;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityServices;
 
 namespace Tests.EditMode
@@ -15,13 +14,13 @@ namespace Tests.EditMode
         [Test]
         public void CheckSelection_OneTouchBegan_SelectionOccurredAndTouchPositionReturned()
         {
-            var randomTouchPosition = new Vector3(UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10), 0);
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
             var unityInputService = Substitute.For<IUnityInputService>();
             unityInputService.GetTouches().Returns(new[]{
                 new Touch
                 {
                     position = randomTouchPosition,
-                    phase = TouchPhase.Began,
+                    phase = TouchPhase.Began
                 }
             });
             var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
@@ -63,7 +62,7 @@ namespace Tests.EditMode
         }
 
         [Test]
-        public void CheckSelection_MultipleTouchesBegan_NoSelectionOccurredAndNoTouchPositionReturned()
+        public void CheckSelection_MultipleTouches_NoSelectionOccurredAndNoTouchPositionReturned()
         {
             var unityInputService = Substitute.For<IUnityInputService>();
             unityInputService.GetTouches().Returns(new[]{
@@ -73,7 +72,7 @@ namespace Tests.EditMode
                 },
                 new Touch
                 {
-                    phase = TouchPhase.Began,
+                    phase = TouchPhase.Stationary,
                 }});
             var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
 
@@ -88,9 +87,9 @@ namespace Tests.EditMode
         #region CheckDragging
 
         [Test]
-        public void CheckDragging_OneTouchCausedSelectionAndStationary_DraggingOccurredAndTouchPositionReturned()
+        public void CheckDragging_OneTouchBegan_DraggingOccurredAndTouchPositionReturned()
         {
-            var randomTouchPosition = new Vector3(UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10), 0);
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
             var unityInputService = Substitute.For<IUnityInputService>();
             unityInputService.GetTouches().Returns(new[]{
                 new Touch
@@ -100,65 +99,452 @@ namespace Tests.EditMode
                 }
             });
             var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
-            Assert.IsTrue(androidInteractionMapper.CheckSelection(out var resultTouchPosition));
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsTrue(result);
+            Assert.AreEqual(randomTouchPosition, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_NoTouches_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_MultipleTouches_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                },
+                new Touch
+                {
+                    phase = TouchPhase.Stationary,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_OneTouchMoved_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Moved,
+                }
+            });
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_OneTouchStationary_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Stationary,
+                }
+            });
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_OneTouchEnded_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Ended,
+                }
+            });
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_OneTouchCanceled_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Canceled,
+                }
+            });
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragging_OneTouchStationaryAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned()
+        {
+            var fingerId = Random.Range(0, 9);
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
             unityInputService.GetTouches().Returns(new[]{
                 new Touch
                 {
                     position = randomTouchPosition,
                     phase = TouchPhase.Stationary,
-                }
-            });
+                    fingerId = fingerId,
+                }});
 
-            var result = androidInteractionMapper.CheckDragging(out resultTouchPosition);
+            result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
 
             Assert.IsTrue(result);
             Assert.AreEqual(randomTouchPosition, resultTouchPosition);
         }
 
         [Test]
-        public void CheckDragging_OneTouchCausedSelectionAndMoved_DraggingOccurredAndTouchPositionReturned()
+        public void CheckDragging_OneTouchMovedAndWasPreviouslyDragging_DraggingOccurredAndTouchPositionReturned()
         {
-            var randomTouchPosition = new Vector3(UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10), 0);
+            var fingerId = Random.Range(0, 9);
             var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
             unityInputService.GetTouches().Returns(new[]{
                 new Touch
                 {
-                    position = randomTouchPosition,
                     phase = TouchPhase.Began,
-                }
-            });
-            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
-            Assert.IsTrue(androidInteractionMapper.CheckSelection(out var resultTouchPosition));
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
             unityInputService.GetTouches().Returns(new[]{
                 new Touch
                 {
                     position = randomTouchPosition,
                     phase = TouchPhase.Moved,
-                }
-            });
+                    fingerId = fingerId,
+                }});
 
-            var result = androidInteractionMapper.CheckDragging(out resultTouchPosition);
+            result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
 
             Assert.IsTrue(result);
             Assert.AreEqual(randomTouchPosition, resultTouchPosition);
         }
 
+        [Test]
+        public void CheckDragging_OneTouchMovedAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned()
+        {
+            var fingerId = Random.Range(0, 9);
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            unityInputService.GetTouches().Returns(new Touch[0]);
+            result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsFalse(result);
+
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Moved,
+                    fingerId = fingerId,
+                }});
+
+            result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
 
         [Test]
-        public void CheckDragging_OneTouchDidntCauseSelectionAndStationary_NoDraggingOccurredAndNoTouchPositionReturned()
+        public void CheckDragging_OneTouchStationaryAndWasThenWasNotPreviouslyDragging_NoDraggingOccurredAndNoTouchPositionReturned()
         {
-            
+            var fingerId = Random.Range(0, 9);
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            unityInputService.GetTouches().Returns(new []{
+                new Touch
+                {
+                    phase = TouchPhase.Moved,
+                    fingerId = fingerId,
+                },
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId + 1,
+                }
+            });
+            result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsFalse(result);
+
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Stationary,
+                    fingerId = fingerId,
+                }});
+
+            result = androidInteractionMapper.CheckDragging(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
         }
+
         #endregion
 
-        //Dragging should include Began too.... because this isn't 1 to 1 with mouse states, began will return if its the first frame while getmouse and et mouse down both return true simultanesously
-        //      maybe check that phase ISNT canceled or ended, but does this contradict
-        //      check for 1 touch, which is the selected touch... hmm then if dragging ever ran before selection it wouldnt have a selected touch and return false that frame
-        // Dragging must be immediately after a selection and connected to it, else 1 touch selection and dragging, 2 touches, dragend, remove 1 touch/1 remains, dragging again
-        //  (if CheckDragging were to only check for "the existence of one touch" instead of "the continuation of a specific selection")
-        // multiple touches causes select and drag to fail, dragend always fired if a touch is being tracked, regardless of tracked touch's phase
-        // end/canceled phases should both trigger DragEnd
-        // need to be able to track touch via id between frames, might be play test or a yield in edit test. create a new test script to see what that sample says about skipping frames in the editor
+        #region CheckDragEnd
+
+        [Test]
+        public void CheckDragEnd_OneTouchBegan_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchMoved_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Moved,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchStationary_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Stationary,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchEnded_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Ended,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchCanceled_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Canceled,
+                }});
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_NoTouches_NoDragEndOccurredAndNoTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+
+            var result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsFalse(result);
+            Assert.AreEqual(null, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchEndedAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned()
+        {
+            var fingerId = Random.Range(0, 9);
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    position = randomTouchPosition,
+                    phase = TouchPhase.Ended,
+                    fingerId = fingerId,
+                }});
+
+            result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsTrue(result);
+            Assert.AreEqual(randomTouchPosition, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_OneTouchCanceledAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned()
+        {
+            var fingerId = Random.Range(0, 9);
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    phase = TouchPhase.Began,
+                    fingerId = fingerId,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            var randomTouchPosition = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    position = randomTouchPosition,
+                    phase = TouchPhase.Canceled,
+                    fingerId = fingerId,
+                }});
+
+            result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsTrue(result);
+            Assert.AreEqual(randomTouchPosition, resultTouchPosition);
+        }
+
+        [Test]
+        public void CheckDragEnd_MultipleTouchesAndWasPreviouslyDragging_DragEndOccurredAndTouchPositionReturned()
+        {
+            var unityInputService = Substitute.For<IUnityInputService>();
+            var androidInteractionMapper = new AndroidInteractionMapper(unityInputService);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    fingerId = 1,
+                    phase = TouchPhase.Began,
+                }});
+            var result = androidInteractionMapper.CheckDragging(out _);
+            Assert.IsTrue(result);
+
+            var randomTouchPosition1 = new Vector3(Random.Range(0, 10), Random.Range(0, 10), 0);
+            var randomTouchPosition2 = new Vector3(randomTouchPosition1.x + 1, randomTouchPosition1.y + 1, 0);
+            unityInputService.GetTouches().Returns(new[]{
+                new Touch
+                {
+                    position = randomTouchPosition2,
+                    phase = TouchPhase.Began,
+                    fingerId = 2,
+                },
+                new Touch
+                {
+                    position = randomTouchPosition1,
+                    phase = TouchPhase.Stationary,
+                    fingerId = 1,
+                }
+                });
+
+            result = androidInteractionMapper.CheckDragEnd(out var resultTouchPosition);
+
+            Assert.IsTrue(result);
+            Assert.AreEqual(randomTouchPosition1, resultTouchPosition);
+        }
+
+        #endregion
 
     }
 }
